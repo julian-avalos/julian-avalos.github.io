@@ -44,7 +44,7 @@ function calculate(){
 		}
 		tries++;
 		document.getElementById("previous_answers").value=
-		document.getElementById("previous_answers").value + numGuess + ", ";
+		document.getElementById("previous_answers").value + numGuess + " ";
 		console.log(tries);
 	}
 
