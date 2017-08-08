@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>Guess The Number</title>
+<meta charset="UTF-8">
+</head>
+
+<body onload="start()">
+<h1>Guess The Number</h1>
+
+<p>I'm thinking of a number, can you guess which one?</p>
+<p id="difficulty">Choose your difficulty</p>
+<p><button type="button" onclick="difficulty(10)">Easy</button> 
+<button type="button" onclick="difficulty(5)">Hard</button>
+
+<p><input type="text" id="guess" placeholder="Guess"> 
+<button type="button" id="button" onclick="calculate()">Guess</button></p>
+<p id="hint"></p>
+
+<textarea rows="10" cols="50" id="previous_answers" disabled></textarea>
+<button type="button" onclick="start()">New Game</button>
+
+
+<script src="guess.js"></script>
+
+</body>
+
+</html>
