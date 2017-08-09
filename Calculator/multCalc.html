@@ -2,14 +2,21 @@
 <head>
 <title>Julian Avalos</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../gamestyle.css">
+<style>body, html{background-color: #FF9800;}</style>
+
+</script>
 </head>
 
 <body>
+
+<main>
 <h1>Multiplication</h1>
-<p>A = <input type="text" id="a" placeholder="Enter first number"></p>
-<p>B = <input type="text" id="b" placeholder="Enter second number"> 
-<button type="button" id="submit" onclick="calculate()">Submit</button></p>
-<p>Answer = <input type="text" id="answer" placeholder="A * B"><p id="error"></p></p>
+  <p>A = <input type="text" id="a" placeholder="Enter first number"></p>
+  <p>B = <input type="text" id="b" placeholder="Enter second number"><br>
+  <button type="button" id="submit" onclick="calculate()">Submit</button></p>
+  <p>Answer:<br> <input type="text" id="answer" disabled placeholder="A * B"><p id="error"></p></p>
+</main>
 
 <script src="mult.js"></script>
 </body>
