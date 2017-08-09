@@ -6,7 +6,7 @@ function calculate(){
 		document.getElementById("answer").value = "";
 	}
 	else{
-		document.getElementById("answer").value = x*y;
+		document.getElementById("answer").innerHTML = x*y;
 		document.getElementById("error").innerHTML="";
 	}
 }
