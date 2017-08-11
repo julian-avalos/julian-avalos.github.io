@@ -1,0 +1,15 @@
+body{
+  background-color: #ccc;
+}
+
+#colorName{
+  padding-top: 20px;
+  padding: 15px;
+  font-size: 30px;
+  background-color: lightgray;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+}
