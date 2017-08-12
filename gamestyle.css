@@ -1,7 +1,6 @@
 html, body{
   margin: 0;
   padding: 0;
-  background-color: #009688;
 }
 
 main{
@@ -26,4 +25,17 @@ button:active{
 #guess{
   font-size: 20px;
   text-align: center;
+}
+
+#colorName{
+  font-size: 30px;
+}
+
+#main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }

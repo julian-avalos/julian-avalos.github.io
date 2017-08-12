@@ -59,7 +59,7 @@ html, body{
 #projects-title{
   font-size: 2em;
   text-align: center;
-  margin-top: 10%;
+height: 300px;
 }
 .content{
   float: left;
