@@ -6,8 +6,9 @@
 </head>
 
 <body onload="start()">
-
-  <div id="nav">
+<div id="burger" onclick="slideMenu()"><p>&#10162;</p></div>
+  <div id="slidenav">
+    <div id="navclose" onclick="navclose()"><p>Close</p></div>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../Calculator/multCalc.html">Multiplication</a></li>
@@ -15,7 +16,8 @@
     </ul>
   </div>
 
-<main>
+<div id="main">
+  <main>
   <h1>Guess The Number</h1>
   <p>I'm thinking of a number, can you guess which one?</p>
   <p id="difficulty">Choose your difficulty</p>
@@ -29,15 +31,17 @@
   <textarea rows="2" cols="20" id="previous_answers" disabled></textarea><br>
   <button type="button" onclick="start()">New Game</button>
 </main>
+</div>
+
 
 
 <script src="guess.js"></script>
+<script src="../navclose.js"></script>
 <style>
   body{
     background-color: #cccccc;
   }
 </style>
-
 </body>
 
 </html>

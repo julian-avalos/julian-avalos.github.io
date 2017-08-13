@@ -13,14 +13,17 @@
 
 <body>
 
-  <div id="nav">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../guess/guess.html">Guess The Number</a></li>
-      <li><a href="../colors/index.html">Hex Color Generator</a></li>
-    </ul>
-  </div>
+<div id="burger" onclick="slideMenu()"><p>&#10162;</p></div>
+<div id="slidenav">
+  <div id="navclose" onclick="navclose()"><p>Close</p></div>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../guess/guess.html">Guess The Number</a></li>
+    <li><a href="../colors/index.html">Hex Generator</a></li>
+  </ul>
+</div>
 
+<div id="main">
   <main>
   <h1>Multiplication</h1>
     <p>A = <input type="text" id="a" placeholder="Enter first number"></p>
@@ -28,8 +31,10 @@
     <button type="button" id="submit" onclick="calculate()">Submit</button></p>
     <p>Answer:<br> <p id="answer"><p id="error"></p></p>
   </main>
+  </div>
 
   <script src="mult.js"></script>
+  <script src="../navclose.js"></script>
 </body>
 
 </html>

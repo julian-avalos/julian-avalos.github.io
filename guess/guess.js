@@ -1,5 +1,6 @@
 var num, numGuess, tries, maxTries;
 
+
 function start(){
 	num=Math.floor(Math.random()*100)+1;
 	tries=0;
