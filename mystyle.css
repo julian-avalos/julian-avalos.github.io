@@ -26,40 +26,28 @@ html, body{
   text-align: center;
 }
 
-#about-icon{
-  text-align: center;
-  float: left;
-  width: 20%;
-  height: 200px;
-  background-color: #42A5F5;
-  padding-bottom: 50px;
-}
-
-#about-icon h1{
-  padding-top: 25%;
-}
 
 #about{
-  float: left;
-  width: 80%;
+  width: 100%;
   height: 200px;
   background-color: #42A5F5;
-  padding-bottom: 50px
 }
 
 #about p{
-  overflow: auto;
-  max-height: 150px;
+  overflow: hidden;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #about h1{
   text-align: center;
+  margin: 0;
 }
 
 #projects-title{
   font-size: 2em;
   text-align: center;
-height: 300px;
 }
 .content{
   float: left;
@@ -72,9 +60,38 @@ height: 300px;
   .content{
     float: none;
     margin: auto;
-  } 
+  }
 
   #projects-title{
-    margin: auto;
+    width: 100%;
   }
+  #about{
+    width: 100%;
+    height: 200px;
+    background-color: #42A5F5;
+  }
+  #about p{
+    overflow: hidden;
+  }
+
+  #about h1{
+    text-align: center;
+  }
+  #about-icon{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #42A5F5;
+    padding-bottom: 50px;
+  }
+  #projects{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
 }
