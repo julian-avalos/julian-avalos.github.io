@@ -47,10 +47,14 @@ html, body{
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .content{
     float: none;
     margin: auto;
+  }
+
+  #jumbo h2{
+    text-align: center;
   }
 
   #projects-title{
@@ -59,7 +63,6 @@ html, body{
   #about{
     width: 100%;
     height: 200px;
-    background-color: #42A5F5;
   }
   #about p{
     overflow: hidden;
@@ -72,7 +75,6 @@ html, body{
     text-align: center;
     width: 100%;
     height: 200px;
-    background-color: #42A5F5;
     padding-bottom: 50px;
   }
   #projects{
