@@ -48,7 +48,7 @@ html, body{
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .content{
     float: none;
     margin: auto;
