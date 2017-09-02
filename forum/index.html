@@ -22,18 +22,18 @@
       </ul>
     </div>
 
+<div id="main">
   <div id="header">
     <h1>Forum!</h1>
     <p>Welcome to the forum!</p>
   </div>
-<div id="main">
   <div id="main-thread">
 
   </div>
 
   <div id="new">
-    <textarea id="content" rows="5" cols="30"></textarea>
-    <button id="submit" onclick="add_thread()">Submit</button>
+    <textarea id="content" rows="5" cols="30" onkeyup="toggleButton(this,'bttnsubmit')"></textarea>
+    <button id="submit" onclick="add_thread()" disabled>Submit</button>
   </div>
 </div>
 

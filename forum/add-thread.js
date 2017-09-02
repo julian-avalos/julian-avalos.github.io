@@ -13,6 +13,10 @@ var new_content;
   };
   firebase.initializeApp(config);
 
+  function toggleButton(ref,bttnID){
+    document.getElementById("submit").disabled= ((ref.value !== ref.defaultValue) ? false : true);
+  }
+
 function add_thread(){
     textarea_content=document.getElementById("content").value;
 
@@ -21,6 +25,7 @@ function add_thread(){
 
     var database = firebase.database();
     saveMessage(new_content);
+    document.getElementById("submit").disabled = true;
 }
 
 var messagesRef = firebase.database().ref("messages");
@@ -35,7 +40,6 @@ function saveMessage(new_content){
 // Retrieve new posts as they are added to our database
 messagesRef.on("child_added", function(snapshot, prevChildKey) {
   var messages = snapshot.val();
-  console.log(messages.new_content);
   var content = "<p id='thread'>" + messages.new_content + "</p>";
   document.getElementById("main-thread").innerHTML += content;
 });
