@@ -21,7 +21,7 @@ body{
   font-size: 25px;
   margin: 5px auto 5px auto;
   border-bottom: 1px #ddd solid;
-  overflow: scroll;
+  overflow: auto;
 
 }
 
