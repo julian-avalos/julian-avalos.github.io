@@ -20,11 +20,8 @@ body{
 #thread{
   font-size: 25px;
   margin: 5px auto 5px auto;
+  border-bottom: 1px #ddd solid;
 
-}
-
-#thread:nth-of-type(odd){
-    background-color: lightgray;
 }
 
 #new{

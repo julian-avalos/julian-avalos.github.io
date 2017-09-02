@@ -40,6 +40,8 @@ function saveMessage(new_content){
 // Retrieve new posts as they are added to our database
 messagesRef.on("child_added", function(snapshot, prevChildKey) {
   var messages = snapshot.val();
+  var i = 1;
   var content = "<p id='thread'>" + messages.new_content + "</p>";
   document.getElementById("main-thread").innerHTML += content;
+  i++;
 });
