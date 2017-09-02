@@ -13,6 +13,7 @@ var new_content;
   };
   firebase.initializeApp(config);
 
+
   function toggleButton(ref,bttnID){
     document.getElementById("submit").disabled= ((ref.value !== ref.defaultValue) ? false : true);
   }
@@ -26,7 +27,6 @@ function add_thread(){
     var database = firebase.database();
     saveMessage(new_content);
     document.getElementById("submit").disabled = true;
-    firebase.database().goOffline();
 }
 
 var messagesRef = firebase.database().ref("messages");
@@ -36,6 +36,7 @@ function saveMessage(new_content){
   newMessageRef.set({
     new_content:new_content
   });
+
 }
 
 // Retrieve new posts as they are added to our database
