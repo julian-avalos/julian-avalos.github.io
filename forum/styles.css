@@ -21,7 +21,7 @@ body{
 #thread{
   font-size: 25px;
   height: auto;
-  margin: 0;
+  margin-top: 10px;
   border-bottom: 1px #ddd solid;
   overflow: auto;
   display: flex;
