@@ -26,6 +26,7 @@ function add_thread(){
     var database = firebase.database();
     saveMessage(new_content);
     document.getElementById("submit").disabled = true;
+    firebase.database().goOffline();
 }
 
 var messagesRef = firebase.database().ref("messages");
@@ -42,5 +43,5 @@ messagesRef.on("child_added", function(snapshot, prevChildKey) {
   var messages = snapshot.val();
   var content = "<p id='thread'>" + messages.new_content + "</p>";
   document.getElementById("main-thread").innerHTML += content;
-  firebase.goOffline();
+
 });
