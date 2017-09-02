@@ -4,33 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
   <title>Forum</title>
 </head>
-<body>
-  <h1>Forum!</h1>
-  <p>Welcome to the forum!</p>
 
+
+<body>
+
+  <div id="burger" onclick="slideMenu()"><p>&#10162;</p></div>
+    <div id="slidenav">
+      <div id="navclose" onclick="navclose()"><p>Close</p></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Calculator/multCalc.html">Multiplication</a></li>
+        <li><a href="../colors/index.html">Hex Color Generator</a></li>
+        <li><a href="../guess/guess.html">Guess The Number</a></li>
+
+      </ul>
+    </div>
+
+  <div id="header">
+    <h1>Forum!</h1>
+    <p>Welcome to the forum!</p>
+  </div>
+<div id="main">
   <div id="main-thread">
 
   </div>
 
   <div id="new">
-    <textarea id="content" rows="10" cols="50"></textarea>
+    <textarea id="content" rows="5" cols="30"></textarea>
     <button id="submit" onclick="add_thread()">Submit</button>
   </div>
-
+</div>
 
 
 
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   </script>
-
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
   <script type="text/javascript"
     src="add-thread.js">
   </script>
+  <script src="../navclose.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
 </body>
 </html>
