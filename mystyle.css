@@ -15,6 +15,7 @@ html, body{
   align-items: center;
   color: white;
   font-size: 2em;
+  text-align: center;
 }
 
 
@@ -47,14 +48,10 @@ html, body{
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .content{
     float: none;
     margin: auto;
-  }
-
-  #jumbo h2{
-    text-align: center;
   }
 
   #projects-title{
