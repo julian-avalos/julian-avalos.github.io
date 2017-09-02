@@ -17,12 +17,26 @@ body{
   margin-right: auto;
   border: 1px black solid;
 }
+
 #thread{
   font-size: 25px;
-  margin: 5px auto 5px auto;
+  height: auto;
+  margin: 0;
   border-bottom: 1px #ddd solid;
   overflow: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 
+}
+#thread:nth-child(even) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#thread{
+  padding-left: 10px;
 }
 
 #new{
