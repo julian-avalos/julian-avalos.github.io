@@ -31,11 +31,16 @@ var new_content;
     if(firebaseUser){
       logout.classList.remove("hide");
       login.classList.add("hide");
+      getPosts();
     }else{
       logout.classList.add("hide");
       login.classList.remove("hide");
     }
   });
+
+  logout.onclick = function () {
+        location.href = "loggedout.html";
+    };
 
   function toggleButton(ref,bttnID){
     document.getElementById("submit").disabled= ((ref.value !== ref.defaultValue) ? false : true);
@@ -63,9 +68,11 @@ function saveMessage(new_content){
 }
 
 // Retrieve new posts as they are added to our database
+function getPosts(){
 messagesRef.on("child_added", function(snapshot, prevChildKey) {
   var messages = snapshot.val();
   var content = "<p id='thread'>" + messages.new_content + "</p>";
   document.getElementById("main-thread").innerHTML += content;
 
 });
+}
