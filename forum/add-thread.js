@@ -13,6 +13,29 @@ var new_content;
   };
   firebase.initializeApp(config);
 
+  const auth = firebase.auth();
+  const login = document.getElementById("anonIn");
+  const logout = document.getElementById("anonOut");
+
+  //login functionality
+  login.addEventListener("click", e => {
+    firebase.auth().signInAnonymously();
+  });
+
+  //logout functionality
+  logout.addEventListener("click", e => {
+    auth.signOut();
+  })
+  auth.onAuthStateChanged(firebaseUser =>{
+    console.log(firebaseUser);
+    if(firebaseUser){
+      logout.classList.remove("hide");
+      login.classList.add("hide");
+    }else{
+      logout.classList.add("hide");
+      login.classList.remove("hide");
+    }
+  });
 
   function toggleButton(ref,bttnID){
     document.getElementById("submit").disabled= ((ref.value !== ref.defaultValue) ? false : true);
