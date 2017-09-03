@@ -39,7 +39,7 @@ var new_content;
   });
 
   logout.onclick = function () {
-        location.href = "loggedout.html";
+        location.href = "loggedOut.html";
     };
 
   function toggleButton(ref,bttnID){
