@@ -1,0 +1,4 @@
+node_modules
+.DS_Store
+colors/.DS_Store
+colors/package-lock.json
