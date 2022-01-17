@@ -1,0 +1,11 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
+I was the first member of my whole family, immediate and extended, to graduate college and it has all been thanks to my parents always supporting me and pushing me to do better.
+
+At first I wanted to become a teacher, then I wanted to be a computer scientist, and then finally I found my love for web development. Having taken a few computer science classes has allowed me to want to understand how different technologies work under the hood, and I believe this is an important piece of knowledge everyone should seek. Not only does it allow me to better debug mistakes, but also improves my critical thinking.
+
+Outside of work I enjoy playing with my pets, exploring new food places, making new friends, and driving my car -- a 1986 Nissan 300zx.

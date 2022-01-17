@@ -1,2 +1,0 @@
-# multCalculator
-Multiplication Calculator
